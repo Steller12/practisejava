@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="maindiv" class="maindivclass">
+        <h1 id="head">events and handlers</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, beatae? Inventore repudiandae, libero sed temporibus velit nobis vitae esse excepturi molestias tempora ipsa tenetur sunt doloremque nihil, asperiores quos sint perferendis ratione at dolor autem deserunt voluptas quae perspiciatis. Debitis voluptas ad ipsum fugiat cupiditate unde! Minus, beatae tenetur facere cumque, reprehenderit pariatur blanditiis necessitatibus placeat quo voluptatibus quas deleniti ipsa corrupti aspernatur quis labore aliquam? Harum a commodi, eum, ad pariatur cum officia numquam dolorem temporibus ullam adipisci deserunt delectus est facere accusantium amet minus. Veniam excepturi a exercitationem illo. Ullam eligendi sint maiores iure dolorem accusantium fugit facere facilis inventore, harum neque placeat eius et similique consequatur iusto quos provident voluptas, repellendus voluptatibus dolores eos. Officia necessitatibus blanditiis animi quo soluta dolores! Quia minus ipsam nisi ex quo enim non sequi voluptates assumenda sint, a dolorum quaerat soluta facilis, vero reprehenderit. Nesciunt quasi error temporibus. Est quos, quod natus porro ipsum, sunt maiores nobis eius eligendi obcaecati veritatis dolorem aperiam nihil rem. Nisi animi maxime hic quisquam blanditiis dignissimos voluptas, recusandae illo, iste sint veniam beatae quibusdam eius cum atque iure facere! Magnam perferendis temporibus at officiis, voluptatum labore, dolores ab eaque magni nulla accusantium vero? Obcaecati, similique?</p>
+        <p id="time">this text will change to time</p>
+        <input id="btn" type="button" value="submit">
+    </div>
+    <script>
+        // function greet(){
+            // console.log("Hello World")
+        // }
+        // let timeout = setTimeout(greet,10000) //calls the function after a given time period
+        // clearTimeout(timeout)
+        // let interval= setInterval(greet,10000)
+        // clearInterval(interval)
+        function display(){
+            let datetime=new Date();
+            console.log(datetime);
+            document.getElementById("time").innerHTML=datetime;
+        }
+        setInterval(display,1000)
+    </script>
+</body>
+</html>
